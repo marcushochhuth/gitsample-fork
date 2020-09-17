@@ -36,8 +36,8 @@ public class Calculator {
 	}
 
 	private void setupDefaultOperations() {
-	    // Das ist der erste Kommentar in masterGithub
-	    // Das ist der zweite Kommentar in master
+	    // Das ist der erste Kommentar in masterGithub von Theresa
+		// Das ist der zweite Kommentar direkt im master und diesmal auch von Theresa
 		new Equals();
 		new Minus();
 		new Plus();
@@ -90,6 +90,10 @@ public class Calculator {
 		return (Operations.INSTANCE.getOperation(name) != null);
 	}
 
+	private void resetMemory() {
+		// TODO for future use
+	}
+	
 	public void handleButtonClick(String str) {
 		if (isCommand(str)) {
 			calculate(str);
