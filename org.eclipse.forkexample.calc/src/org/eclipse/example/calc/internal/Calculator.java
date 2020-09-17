@@ -90,6 +90,10 @@ public class Calculator {
 		return (Operations.INSTANCE.getOperation(name) != null);
 	}
 
+	private void resetMemory() {
+		// TODO for future use
+	}
+	
 	public void handleButtonClick(String str) {
 		if (isCommand(str)) {
 			calculate(str);
